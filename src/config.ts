@@ -39,6 +39,52 @@ Do NOT use for web search -- use web_search_query. Do NOT use for text classific
         },
         required: ["query"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Search query"
+            },
+            "namespace": {
+              "type": "string",
+              "description": "Vector namespace"
+            },
+            "totalDocuments": {
+              "type": "number",
+              "description": "Total documents in namespace"
+            },
+            "resultCount": {
+              "type": "number",
+              "description": "Number of results"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "similarity": {
+                    "type": "number"
+                  },
+                  "index": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "timestamp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query",
+            "resultCount",
+            "results"
+          ]
+        },
     },
   ],
 };
