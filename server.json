@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://vector-search-x402-production.up.railway.app/mcp"
+      "url": "https://vector-search.api.klymax402.com/mcp"
     }
   ]
 }
