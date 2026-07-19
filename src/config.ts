@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/search",
-      price: "$0.005",
+      price: "$0.012",
       description: "Store text and search by semantic similarity",
       toolName: "data_vector_search",
       toolDescription: "Use this when you need to store text documents and search them by semantic similarity. Accepts documents to store and a query to search. Uses TF-IDF vectorization with cosine similarity to find the most relevant matches. Returns top-k results with similarity scores. Do NOT use for web search — use web_search_query instead. Do NOT use for keyword research — use keyword_research instead. Do NOT use for text classification — use text_classify instead.",
