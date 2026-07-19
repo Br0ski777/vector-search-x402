@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `data_vector_search` | POST | `/api/search` | $0.005 | Store text and search by semantic similarity |
+| `data_vector_search` | POST | `/api/search` | $0.012 | Store text and search by semantic similarity |
 
 ### `data_vector_search`
 
